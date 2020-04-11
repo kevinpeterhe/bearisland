@@ -2,10 +2,6 @@ div {
   position: absolute;
 }
 
-body {
-  background-color: #0083ff;
-}
-
 #scene {
   width: 720px;
   height: 500px;
