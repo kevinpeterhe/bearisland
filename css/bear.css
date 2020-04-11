@@ -1,24 +1,41 @@
+#bear {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    transition: transform 6s;
+}
+
+#bear_layer {
+    width: 100%;
+    height: 100%;
+  }
+  .bear-container {
+    width: 100%;
+    height: 100%;
+  }
+
 .leg {
     transform: translateY(-10%);
     transform-origin: center 10%;
     transform-box: fill-box;
 }
 
-#front_left_leg {
+#front_left_leg.walking {
     animation: walkingPaw 5s infinite ease-in;
 }
 
-#front_right_leg {
+#front_right_leg.walking {
     animation: walkingPaw 5s infinite ease-in;
     animation-delay: 2.25s;
 }
 
-#back_left_leg {
+#back_left_leg.walking {
     animation: walkingPaw 5s infinite ease-in;
     animation-delay: 2.75s;
 }
 
-#back_right_leg {
+#back_right_leg.walking {
     animation: walkingPaw 5s infinite ease-in;
     animation-delay: 0.5s;
 }

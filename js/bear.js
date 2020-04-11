@@ -1,3 +1,5 @@
+let direction = 1;
+const createRandomNumber = () => Math.floor(Math.random() * 100)
 
 function blinkEyes() {
     const eyes = document.querySelectorAll('.eye')
@@ -6,6 +8,21 @@ function blinkEyes() {
     })
 
     setTimeout(() => eyes.forEach(eye => eye.classList.remove('blink')), 1800)
+}
+
+function walkSteps() {
+    const X = createRandomNumber() * direction
+    const Y = createRandomNumber() 
+    const bear = document.querySelector('#bear')
+    bear.style.transform = `translateX(${X}%) ${direction > 0 ? '' : 'scaleX(-1)'}`
+
+    const legs = document.querySelectorAll('.leg')
+    legs.forEach(leg => {
+        leg.classList.add('walking')
+    })
+    setTimeout(() => legs.forEach(leg => leg.classList.remove('walking')), 2000)
+
+    direction = direction * -1
 }
 
 async function loadBear() {
@@ -17,17 +34,14 @@ async function loadBear() {
 
     document.querySelector('#bear_layer').appendChild(bearContainer)
 
-    const createRandomNumber = () => Math.floor(Math.random() * 100) % 2
-
     setInterval(function randomBearRelatedEvents() {
-        const shouldBlinkEyes = createRandomNumber() % 5 
-        const shouldWiggleEars = createRandomNumber() % 7 
-        const shouldShakeTail = createRandomNumber() % 11
+        const shouldWalk = !(createRandomNumber() % 3);
+        const shouldBlinkEyes = createRandomNumber() % 13 
+        // const shouldWiggleEars = createRandomNumber() % 7 
+        // const shouldShakeTail = createRandomNumber() % 11
 
-        if (shouldBlinkEyes) {
-            console.log("should blink eyes")
-            blinkEyes()
-        }
+        shouldBlinkEyes && blinkEyes()
+        shouldWalk && walkSteps();
     }, 1000);
 }
 
