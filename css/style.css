@@ -18,10 +18,58 @@ div {
   border-radius: 50%;
 }
 
-#waves {
-  width: 600px;
-  height: 300px;
-  background-color: blue;
+#wave1 {
+  background-image: url("../images/wave.png");
+  height: 900px;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wave2 {
+  background-image: url("../images/wave.png");
+  height: 920px;
+  width: 100%;
+  background-position: 20% 20%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wave3 {
+  background-image: url("../images/wave.png");
+  height: 940px;
+  width: 100%;
+  background-position: 30% 30%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wave4 {
+  background-image: url("../images/wave.png");
+  height: 960px;
+  width: 100%;
+  background-position: 40% 40%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wave5 {
+  background-image: url("../images/wave.png");
+  height: 980px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wave6 {
+  background-image: url("../images/wave.png");
+  height: 1000px;
+  width: 100%;
+  background-position: 60% 60%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #smallIsland {
