@@ -9,13 +9,12 @@ div {
   left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: white;
 }
 
 #bear {
   width: 150px;
   height: 150px;
-  background-color: brown;
+  background-color: #fff;
   border-radius: 50%;
 }
 
