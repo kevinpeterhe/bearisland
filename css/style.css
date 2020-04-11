@@ -18,12 +18,41 @@ div {
   border-radius: 50%;
 }
 
-#waves {
-  width: 600px;
-  height: 300px;
-  background-color: blue;
+#wave1 {
+  background-image: url("../images/wave.png");
+  height: 130px;
+  width: 720px;
 }
-
+#wave2 {
+  background-image: url("../images/wave.png");
+  height: 130px;
+  width: 720px;
+  background-position: 20% 20%;
+}
+#wave3 {
+  background-image: url("../images/wave.png");
+  height: 130px;
+  width: 720px;
+  background-position: 30% 30%;
+}
+#wave4 {
+  background-image: url("../images/wave.png");
+  height: 130px;
+  width: 720px;
+  background-position: 40% 40%;
+}
+#wave5 {
+  background-image: url("../images/wave.png");
+  height: 130px;
+  width: 720px;
+  background-position: 50% 50%;
+}
+#wave6 {
+  background-image: url("../images/wave.png");
+  height: 130px;
+  width: 720px;
+  background-position: 60% 60%;
+}
 #island {
   width: 500px;
   height: 200px;
