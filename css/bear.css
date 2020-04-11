@@ -1,0 +1,99 @@
+#bear {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    transition: transform 6s;
+}
+
+#bear_layer {
+    width: 100%;
+    height: 100%;
+  }
+  .bear-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.leg {
+    transform: translateY(-10%);
+    transform-origin: center 10%;
+    transform-box: fill-box;
+}
+
+#front_left_leg.walking {
+    animation: walkingPaw 4s infinite ease-in;
+}
+
+#front_right_leg.walking {
+    animation: walkingPaw 4s infinite ease-in;
+    animation-delay: 2.25s;
+}
+
+#back_left_leg.walking {
+    animation: walkingPaw 4s infinite ease-in;
+    animation-delay: 2.75s;
+}
+
+#back_right_leg.walking {
+    animation: walkingPaw 4s infinite ease-in;
+    animation-delay: 0.5s;
+}
+
+@keyframes walkingPaw {
+    0% {
+        transform: rotate(0deg) translateY(-10%);
+    }
+
+    25% {
+        transform: rotate(20deg) translateX(-5%) translateY(-8%);
+    }
+
+    50% {
+        transform: rotate(20deg) translateX(-2%) translateY(5%);
+    }
+
+    100% {
+        transform: rotate(0deg) translateX(0) translateY(-10%);
+    }
+}
+
+
+@keyframes wiggleEars {
+
+}
+
+
+.eye {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.blink {
+    animation: blinkEyes 1s infinite ease-in-out;
+}
+
+#right_eye.blink {
+    animation-delay: 0.8s;
+}
+
+#left_eye.blink {
+    animation-delay: 0.9s;
+}
+
+@keyframes blinkEyes {
+    0% {
+    }
+
+    25% {
+        transform: scaleY(0.2);
+    }
+
+    50% {
+
+    }
+
+    100% {
+
+    }
+}

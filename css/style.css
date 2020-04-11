@@ -2,6 +2,20 @@ div {
   position: absolute;
 }
 
+body {
+  background-color: lightcyan;
+}
+
+#bear_layer {
+  width: 100px;
+  height: 100px;
+}
+
+.bear-container {
+  width: 20%;
+  height: 20%;
+}
+
 #scene {
   width: 720px;
   height: 500px;
@@ -9,13 +23,6 @@ div {
   left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-#bear {
-  width: 150px;
-  height: 150px;
-  background-color: #fff;
-  border-radius: 50%;
 }
 
 #wave1 {
