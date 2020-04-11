@@ -14,7 +14,7 @@ div {
 #bear {
   width: 150px;
   height: 150px;
-  background-color: brown;
+  background-color: #fff;
   border-radius: 50%;
 }
 
@@ -24,11 +24,47 @@ div {
   background-color: blue;
 }
 
-#island {
-  width: 500px;
-  height: 200px;
-  background-color: green;
+#smallIsland {
+  margin-left: 0%;
+  margin-top: 30%;
+  width: 0;
+  height: 0;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 250px solid #eee;
 }
+
+#smallIsland2 {
+  margin-left: 54%;
+  margin-top: 40%;
+  width: 0;
+  height: 0;
+  border-left: 130px solid transparent;
+  border-right: 130px solid transparent;
+  border-bottom: 180px solid #98b3c3;
+}
+
+#island {
+  margin-left: 8%;
+  margin-top: 25%;
+  width: 0;
+  height: 0;
+  border-left: 280px solid transparent;
+  border-right: 280px solid transparent;
+  border-bottom: 320px solid #a4cfec;
+}
+
+#islandShadows {
+   margin-top: 65%;
+   width: 0;
+   height: 0;
+   border-left: 322px solid transparent;
+   border-right: 322px solid transparent;
+   border-top: 340px solid #4d6579;
+   position: absolute;
+}
+
+
 .id {
   width: 32%;
   height: 100%;
