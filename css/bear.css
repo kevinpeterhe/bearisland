@@ -22,21 +22,21 @@
 }
 
 #front_left_leg.walking {
-    animation: walkingPaw 5s infinite ease-in;
+    animation: walkingPaw 4s infinite ease-in;
 }
 
 #front_right_leg.walking {
-    animation: walkingPaw 5s infinite ease-in;
+    animation: walkingPaw 4s infinite ease-in;
     animation-delay: 2.25s;
 }
 
 #back_left_leg.walking {
-    animation: walkingPaw 5s infinite ease-in;
+    animation: walkingPaw 4s infinite ease-in;
     animation-delay: 2.75s;
 }
 
 #back_right_leg.walking {
-    animation: walkingPaw 5s infinite ease-in;
+    animation: walkingPaw 4s infinite ease-in;
     animation-delay: 0.5s;
 }
 

@@ -10,7 +10,7 @@
             .cls-7{fill:#231f20}
         </style>
     </defs>
-    <g>
+    <g id="bear_group">
         <g id="front_left_leg" class="leg" data-name="front left leg">
             <path class="cls-1" d="M101.5,258.49v-.16h0C101.51,258.38,101.5,258.44,101.5,258.49Z"/>
             <path class="cls-1" d="M100.51,260.08c.4-.31.38-.3,0,0Z"/>
